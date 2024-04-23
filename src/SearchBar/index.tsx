@@ -1,8 +1,7 @@
-import { Dispatch, SetStateAction } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 interface IProps {
-  setAge: Dispatch<SetStateAction<number>>;
+  setAge: React.Dispatch<React.SetStateAction<number>>;
 }
 
 interface IFormInput {

@@ -2,11 +2,12 @@ import Cell from "../Cell";
 
 interface IProps {
   age: number;
+  maxAge: number;
 }
 
-export default function LifeGrid({ age }: IProps) {
+export default function LifeGrid({ age, maxAge }: IProps) {
   const items = [];
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= maxAge; i++) {
     const color = i <= age ? "bg-green-400" : "bg-gray-400";
     items.push(<Cell index={i} color={color} />);
   }
